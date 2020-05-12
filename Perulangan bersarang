@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+	int r;
+	cout << " Tentukan Panjang Pola ";
+	cin >> r;
+	
+	cout << "Pola\r";
+	
+	for ( int x = 1 ; x <= r; x++){
+	for ( int y = r ; y > x; y--)
+	{
+		cout << " ";
+	}
+	for ( int z = 1; z <= (2*x - 1); z++)
+	{
+		cout << "*";
+	}
+	cout << endl;
+  }
+}
